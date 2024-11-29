@@ -11,7 +11,7 @@ const Products = () => {
         .then((data) => setProducts(data))
     }, [])
     return products.map((product) => {
-        return (
+        return ( 
             <div className='card' key={product.id}>
               <img src={product.img} alt="img-product" />
               <h3>{product.name}</h3>
