@@ -1,10 +1,14 @@
 import Navbar from "../Navbar/Navbar"
+import CartElements from "./CartElements"
+import CartTotal from "./CartTotal"
+import './CartContent.css'
 
 const CartContent = () => {
   return (
     <>
         <Navbar />
-        <div>CartContent</div>
+        <CartElements />
+        <CartTotal />
     </>
   )
 }
