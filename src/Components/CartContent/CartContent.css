@@ -18,3 +18,13 @@
   .cart-delete-product {
     cursor: pointer;
   }
+
+  .counter-button {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .cart-message-center {
+    text-align: center;
+    margin-top: 40px;
+  }

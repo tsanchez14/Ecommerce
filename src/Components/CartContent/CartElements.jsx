@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { Context } from '../../Context/Context'
-import Products from '../Products/Products'
+import CartItemCounter from './CartItemCounter'
 
 const CartElements = () => {
     const {cart, setCart} = useContext(Context)
@@ -17,7 +17,8 @@ const CartElements = () => {
             <div className='product-card-container' key={product.id}>
               <img src={product.img} alt="product-card" />
               <h3>{product.name}</h3>
-              <h4>{product.price}</h4>
+              <CartItemCounter product={product}/>
+              <h4>{product.price * product.quanty}</h4>
               <button onClick={() => deleteProducts(product.id)} className='cart-delete-product'>Eliminar</button>
             </div>
           )
